@@ -1,0 +1,63 @@
+﻿<nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Axians</a>
+        <div class="user-info d-flex align-items-center order-lg-3">
+            <img src="img/avatar.png" class="rounded-circle avatar" height="40" width="40">
+            <div class="user-details">
+                <span class="user-name">Nome do Usuário</span>
+                <small class="user-level">Nível de Perfil</small>
+            </div>
+        </div>
+        <button class="navbar-toggler order-lg-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse order-lg-1" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Avisos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Entidades</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Candidaturas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Operações</a>
+                </li>
+            </ul>
+            <form class="d-flex search-form" role="search">
+                <input class="form-control me-2 search-input" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn search-btn" type="button" onclick="toggleSearch()">
+                    <i class="fas fa-search"></i>
+                </button>
+                <button class="btn notification-btn" type="button">
+                    <i class="fas fa-bell"></i>
+                </button>
+                <button class="btn settings-btn" type="button">
+                    <i class="fas fa-cog"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+</nav>
+
+<script>
+    function toggleSearch() {
+        var searchInput = document.querySelector('.search-input');
+        if (searchInput.classList.contains('expand')) {
+            searchInput.classList.remove('expand');
+            searchInput.style.display = 'none';
+        } else {
+            searchInput.classList.add('expand');
+            searchInput.style.display = 'inline-block';
+        }
+    }
+</script>
+
+@code {
+
+}

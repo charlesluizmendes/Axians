@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35208.52
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{895067EF-E90F-4130-9CE9-424A8D3B8633}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01 - Web", "01 - Web", "{B14DFFB0-60BD-47E9-8234-906A165D71AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Axians.Web", "src\Axians.Web\Axians.Web.csproj", "{EE69C0ED-770B-4E14-A873-1E29A18751FA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EE69C0ED-770B-4E14-A873-1E29A18751FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE69C0ED-770B-4E14-A873-1E29A18751FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE69C0ED-770B-4E14-A873-1E29A18751FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE69C0ED-770B-4E14-A873-1E29A18751FA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B14DFFB0-60BD-47E9-8234-906A165D71AF} = {895067EF-E90F-4130-9CE9-424A8D3B8633}
+		{EE69C0ED-770B-4E14-A873-1E29A18751FA} = {B14DFFB0-60BD-47E9-8234-906A165D71AF}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {292F52B1-886F-48E9-9D6B-1952C6E97F41}
+	EndGlobalSection
+EndGlobal

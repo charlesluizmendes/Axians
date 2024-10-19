@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Axians.Web.props" />
+</Project>

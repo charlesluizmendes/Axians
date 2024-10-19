@@ -1,0 +1,141 @@
+/* _content/Axians.Web/Shared/MainLayout.razor.rz.scp.css */
+@media (max-width: 640.98px) {
+    .top-row:not(.auth)[b-gl28tqjyl4] {
+        display: none;
+    }
+
+    .top-row.auth[b-gl28tqjyl4] {
+        justify-content: space-between;
+    }
+
+    .top-row a[b-gl28tqjyl4], .top-row .btn-link[b-gl28tqjyl4] {
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 641px) {
+    .page[b-gl28tqjyl4] {
+        flex-direction: row;
+    }
+
+    .sidebar[b-gl28tqjyl4] {
+        width: 250px;
+        height: 100vh;
+        position: sticky;
+        top: 0;
+    }
+
+    .top-row[b-gl28tqjyl4] {
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
+
+    .top-row[b-gl28tqjyl4], article[b-gl28tqjyl4] {
+        padding-left: 2rem !important;
+        padding-right: 1.5rem !important;
+    }
+}
+/* _content/Axians.Web/Shared/NavMenu.razor.rz.scp.css */
+.navbar[b-69d7cfwzup] {
+    background-color: #4841b3;    
+}
+
+.navbar-brand[b-69d7cfwzup] {
+    color: white;
+}
+
+.nav-link[b-69d7cfwzup] {
+    color: white;
+}
+
+.navbar .nav-link.active[b-69d7cfwzup] {
+    color: white !important;
+}
+
+.navbar-toggler-icon[b-69d7cfwzup] {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.navbar-toggler[b-69d7cfwzup] {
+    border: 1px solid white; /* Define uma borda branca ao redor do bot�o */
+}
+
+.search-input[b-69d7cfwzup] {
+    width: 0;
+    transition: width 0.4s ease;
+    display: none;
+}
+
+.search-btn[b-69d7cfwzup] {
+    color: white;
+    border: none;
+}
+
+/* Bot�o de notifica��es */
+.notification-btn[b-69d7cfwzup] {
+    color: white;
+    border: none;
+}
+
+/* Bot�o de configura��es */
+.settings-btn[b-69d7cfwzup] {
+    color: white;
+    border: none;
+}
+
+.search-input.expand[b-69d7cfwzup] {
+    width: 200px; /* Define a largura do campo de pesquisa ao expandir */
+    display: inline-block;
+}
+
+.btn[b-69d7cfwzup] {
+    margin-left: 10px; /* Espa�amento entre os �cones */
+}
+
+.rounded-circle[b-69d7cfwzup] {
+    border-radius: 50%;
+}
+
+.user-details[b-69d7cfwzup] {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Ajusta o conte�do verticalmente */
+    color: white;
+}
+
+    .user-details strong[b-69d7cfwzup] {
+        line-height: 1;
+        color: white;
+    }
+
+    .user-details small[b-69d7cfwzup] {
+        line-height: 1;
+        margin-top: 5px;
+        color: white;
+    }
+
+/* Nome do usu�rio */
+.user-name[b-69d7cfwzup] {
+    font-size: 14px;
+    display: block;
+    line-height: 1;
+}
+
+/* N�vel de perfil */
+.user-level[b-69d7cfwzup] {
+    font-size: 10px;
+    display: block;
+    line-height: 1;
+}
+
+.user-info[b-69d7cfwzup] {
+    margin-left: 10px; /* Valor padr�o */
+}
+
+@media (max-width: 991px) {
+    .user-info[b-69d7cfwzup] {
+        order: 0; /* Move o user-info para antes do menu em telas menores */
+        margin-left: 60px;
+    }
+}

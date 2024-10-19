@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "Wt8Kw0lgtP8=",
+  "success": true,
+  "projectFilePath": "D:\\Visual Studio\\Axians.Web\\src\\Axians.Web\\Axians.Web.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\charl\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.21.0\\microsoft.visualstudio.azure.containers.tools.targets.1.21.0.nupkg.sha512"
+  ],
+  "logs": []
+}
