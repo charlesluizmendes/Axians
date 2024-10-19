@@ -8,6 +8,7 @@
 
 .nav-link[b-69d7cfwzup] {
     color: white;
+    font-size: 13.5px;
 }
 
 .navbar .nav-link.active[b-69d7cfwzup] {
@@ -19,7 +20,7 @@
 }
 
 .navbar-toggler[b-69d7cfwzup] {
-    border: 1px solid white; /* Define uma borda branca ao redor do bot�o */
+    border: 1px solid white;
 }
 
 .search-input[b-69d7cfwzup] {
@@ -33,25 +34,23 @@
     border: none;
 }
 
-/* Bot�o de notifica��es */
 .notification-btn[b-69d7cfwzup] {
     color: white;
     border: none;
 }
 
-/* Bot�o de configura��es */
 .settings-btn[b-69d7cfwzup] {
     color: white;
     border: none;
 }
 
 .search-input.expand[b-69d7cfwzup] {
-    width: 200px; /* Define a largura do campo de pesquisa ao expandir */
+    width: 200px; 
     display: inline-block;
 }
 
 .btn[b-69d7cfwzup] {
-    margin-left: 10px; /* Espa�amento entre os �cones */
+    margin-left: 10px;
 }
 
 .rounded-circle[b-69d7cfwzup] {
@@ -61,8 +60,9 @@
 .user-details[b-69d7cfwzup] {
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Ajusta o conte�do verticalmente */
+    justify-content: center; 
     color: white;
+    margin-left: 10px;
 }
 
     .user-details strong[b-69d7cfwzup] {
@@ -76,14 +76,13 @@
         color: white;
     }
 
-/* Nome do usu�rio */
 .user-name[b-69d7cfwzup] {
-    font-size: 14px;
+    font-size: 11px;
+    font-weight: bold;
     display: block;
-    line-height: 1;
+    line-height: 1.1;
 }
 
-/* N�vel de perfil */
 .user-level[b-69d7cfwzup] {
     font-size: 10px;
     display: block;
@@ -91,12 +90,12 @@
 }
 
 .user-info[b-69d7cfwzup] {
-    margin-left: 10px; /* Valor padr�o */
+    margin-left: 10px;
 }
 
 @media (max-width: 991px) {
     .user-info[b-69d7cfwzup] {
-        order: 0; /* Move o user-info para antes do menu em telas menores */
+        order: 0;
         margin-left: 60px;
     }
 }

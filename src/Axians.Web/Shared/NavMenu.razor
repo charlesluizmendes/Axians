@@ -2,10 +2,10 @@
     <div class="container-fluid">
         <a class="navbar-brand" href="#">Axians</a>
         <div class="user-info d-flex align-items-center order-lg-3">
-            <img src="img/avatar.png" class="rounded-circle avatar" height="40" width="40">
+            <img src="@UserAvatar" class="rounded-circle avatar" height="40" width="40">
             <div class="user-details">
-                <span class="user-name">Nome do Usuário</span>
-                <small class="user-level">Nível de Perfil</small>
+                <span class="user-name">@UserName</span>
+                <small class="user-level">@UserProfile - @UserEntity</small>
             </div>
         </div>
         <button class="navbar-toggler order-lg-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,13 +32,13 @@
             <form class="d-flex search-form" role="search">
                 <input class="form-control me-2 search-input" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn search-btn" type="button" onclick="toggleSearch()">
-                    <i class="fas fa-search"></i>
+                    <i class="fas fa-search fa-lg"></i>
                 </button>
                 <button class="btn notification-btn" type="button">
-                    <i class="fas fa-bell"></i>
+                    <i class="fas fa-bell fa-lg"></i>
                 </button>
                 <button class="btn settings-btn" type="button">
-                    <i class="fas fa-cog"></i>
+                    <i class="fas fa-cog fa-lg"></i>
                 </button>
             </form>
         </div>
@@ -59,5 +59,9 @@
 </script>
 
 @code {
-
+    // Variáveis para dados dinâmicos do usuário
+    private string UserName { get; set; } = "Erick Frings";
+    private string UserProfile { get; set; } = "Perfil 1";
+    private string UserEntity { get; set; } = "Entidade 0";
+    private string UserAvatar { get; set; } = "img/avatar.png";  // Caminho para o avatar do usuário
 }
