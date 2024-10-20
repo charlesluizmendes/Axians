@@ -2,7 +2,7 @@
 
 <div class="row">
     <div class="col-8">
-        <h4>@OptionName</h4>
+        <h4>@Options[CurrentIndex].Name</h4>
     </div>
     <div class="col-4 d-flex justify-content-end align-items-center">
         <div class="navegacao">
@@ -26,10 +26,7 @@
 
 @code {
     [Parameter]
-    public List<Option> Options { get; set; }
-
-    [Parameter]
-    public string OptionName { get; set; }
+    public List<Option> Options { get; set; }   
 
     [Parameter]
     public int CurrentIndex { get; set; }
@@ -42,7 +39,6 @@
         if (!IsFirstOption)
         {
             CurrentIndex--;
-            OptionName = Options[CurrentIndex].Name;
         }
     }
 
@@ -51,7 +47,6 @@
         if (!IsLastOption)
         {
             CurrentIndex++;
-            OptionName = Options[CurrentIndex].Name;
         }
     }
 }
