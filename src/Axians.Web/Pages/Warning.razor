@@ -1,0 +1,33 @@
+﻿@page "/Avisos"
+@using Axians.Web.Data
+
+<PageTitle>Avisos</PageTitle>
+
+<Header />
+
+<br/>
+
+<OptionList Options="options"></OptionList>
+
+@code {
+    [Parameter]
+    public List<Option> options { get; set; } = new List<Option>()
+    {
+        new () { Id = 1, Name = "Opção 1", Check = true },
+        new () { Id = 2, Name = "Opção 2", Check = true },
+        new () { Id = 3, Name = "Opção 3", Check = true },
+        new () { Id = 4, Name = "Opção 4", Check = true },
+        new () { Id = 5, Name = "Opção 5", Check = true },
+        new () { Id = 6, Name = "Opção 6", Check = true },
+        new () { Id = 7, Name = "Opção 7", Check = true },
+        new () { Id = 8, Name = "Opção 8", Check = true },
+        new () { Id = 9, Name = "Opção 9", Check = true },
+        new () { Id = 10, Name = "Opção 10", Check = false },
+        new () { Id = 11, Name = "Opção 11", Check = false },
+        new () { Id = 11, Name = "Opção 12", Check = false },
+    };
+}
+
+@code {
+
+}

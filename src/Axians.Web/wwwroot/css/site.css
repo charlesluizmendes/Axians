@@ -60,3 +60,12 @@ a, .btn-link {
     .blazor-error-boundary::after {
         content: "An error has occurred."
     }
+
+/* Para posicionar o componente na lateral esquerda */
+.container {
+    position: fixed;
+    left: 0;
+    top: 50px;
+    width: 250px;
+}
+

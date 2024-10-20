@@ -1,0 +1,23 @@
+﻿@using Axians.Web.Data
+
+<div class="lista-opcoes">
+    @foreach (var option in Options)
+    {
+        <div class="opcao">
+            <span class="opcao-text">@option.Name</span>
+            @if (option.Check)
+            {
+                <i class="fas fa-check-circle check-icon"></i>
+            }
+            else
+            {
+                <i class="far fa-circle uncheck-icon"></i>
+            }
+        </div>
+    }
+</div>
+
+@code {
+    [Parameter]
+    public List<Option> Options { get; set; }    
+}

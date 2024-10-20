@@ -1,0 +1,37 @@
+.lista-opcoes[b-vw311ssees] {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    padding: 10px;
+    background-color: #f4f4f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.opcao[b-vw311ssees] {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+    .opcao:hover[b-vw311ssees] {
+        background-color: #e0e0e0;
+    }
+
+.check-icon[b-vw311ssees] {
+    color: green; /* �cone de c�rculo com check na cor verde */
+    font-size: 1.2em;
+}
+
+.uncheck-icon[b-vw311ssees] {
+    color: gray; /* �cone de c�rculo vazio na cor cinza */
+    font-size: 1.2em;
+}
+
+.opcao-text[b-vw311ssees] {
+    font-size: 0.9em; /* Tamanho da fonte ajustado */
+    color: #333;
+}

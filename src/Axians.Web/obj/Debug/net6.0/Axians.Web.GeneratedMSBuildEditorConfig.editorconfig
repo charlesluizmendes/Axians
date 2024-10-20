@@ -26,6 +26,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/Visual Studio/Axians.Web/src/Axians.Web/Pages/Warning.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV2FybmluZy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Visual Studio/Axians.Web/src/Axians.Web/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
@@ -41,6 +45,10 @@ build_metadata.AdditionalFiles.CssScope = b-gl28tqjyl4
 [D:/Visual Studio/Axians.Web/src/Axians.Web/Shared/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-69d7cfwzup
+
+[D:/Visual Studio/Axians.Web/src/Axians.Web/Shared/OptionList.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE9wdGlvbkxpc3QucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-vw311ssees
 
 [D:/Visual Studio/Axians.Web/src/Axians.Web/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
