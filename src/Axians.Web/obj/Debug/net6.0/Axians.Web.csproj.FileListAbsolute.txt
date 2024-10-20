@@ -29,3 +29,4 @@ D:\Visual Studio\Axians.Web\src\Axians.Web\obj\Debug\net6.0\refint\Axians.Web.dl
 D:\Visual Studio\Axians.Web\src\Axians.Web\obj\Debug\net6.0\Axians.Web.pdb
 D:\Visual Studio\Axians.Web\src\Axians.Web\obj\Debug\net6.0\Axians.Web.genruntimeconfig.cache
 D:\Visual Studio\Axians.Web\src\Axians.Web\obj\Debug\net6.0\ref\Axians.Web.dll
+D:\Visual Studio\Axians.Web\src\Axians.Web\obj\Debug\net6.0\scopedcss\Shared\Header.razor.rz.scp.css

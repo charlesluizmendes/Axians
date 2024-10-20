@@ -1,0 +1,33 @@
+﻿<div class="header-container">
+    <span class="breadcrumb">@Menu</span>
+
+        <div class="content-row">
+            <div class="left-section">
+                <button class="back-button">
+                    <i class="fas fa-arrow-left fa-sm"></i>
+                </button>
+            <h1 class="custom-title">NOVO @NewItem</h1>
+                <div class="status">
+                    <i class="fas fa-pen"></i>
+                    <span>EM PREENCHIMENTO</span>
+                </div>
+            </div>
+
+            <div class="right-section">
+                <button class="save-button ">
+                    <i class="fas fa-save"></i> GUARDAR ALTERAÇÕES
+                </button>
+                <button class="validate-button">
+                    VALIDAR
+                </button>
+                <button class="publish-button" disabled>
+                    <i class="fas fa-check fa-sm"></i> PUBLICAR
+                </button>
+            </div>
+        </div>
+</div>
+
+@code {
+    private string Menu { get; set; } = "AVISOS";
+    private string NewItem { get; set; } = "AVISO";    
+}
