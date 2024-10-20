@@ -1,0 +1,31 @@
+﻿<div class="opcao-detalhe-container">
+    <div class="header-detalhe">
+        <h2>@OpcaoName</h2>
+        <div class="navegacao">
+            <button class="botao-navegacao anterior" @onclick="Anterior">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+
+            <button class="botao-navegacao seguinte" @onclick="Seguinte">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+    </div>
+
+    <p class="campos-obrigatorios">* Campos de preenchimento obrigatório</p>
+</div>
+
+@code {
+    [Parameter]
+    public string OpcaoName { get; set; }
+
+    private void Anterior()
+    {
+        // Lógica para a opção anterior
+    }
+
+    private void Seguinte()
+    {
+        // Lógica para a próxima opção
+    }
+}

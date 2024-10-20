@@ -31,3 +31,4 @@ D:\Visual Studio\Axians.Web\src\Axians.Web\obj\Debug\net6.0\Axians.Web.genruntim
 D:\Visual Studio\Axians.Web\src\Axians.Web\obj\Debug\net6.0\ref\Axians.Web.dll
 D:\Visual Studio\Axians.Web\src\Axians.Web\obj\Debug\net6.0\scopedcss\Shared\Header.razor.rz.scp.css
 D:\Visual Studio\Axians.Web\src\Axians.Web\obj\Debug\net6.0\scopedcss\Shared\OptionList.razor.rz.scp.css
+D:\Visual Studio\Axians.Web\src\Axians.Web\obj\Debug\net6.0\scopedcss\Shared\Detail.razor.rz.scp.css

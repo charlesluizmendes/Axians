@@ -1,7 +1,7 @@
 .lista-opcoes[b-vw311ssees] {
     display: flex;
     flex-direction: column;
-    width: 300px;
+    width: auto;
     padding: 10px;
     background-color: #f4f4f9;
     border-radius: 8px;
@@ -22,16 +22,16 @@
     }
 
 .check-icon[b-vw311ssees] {
-    color: green; /* �cone de c�rculo com check na cor verde */
+    color: green; 
     font-size: 1.2em;
 }
 
 .uncheck-icon[b-vw311ssees] {
-    color: gray; /* �cone de c�rculo vazio na cor cinza */
+    color: gray; 
     font-size: 1.2em;
 }
 
 .opcao-text[b-vw311ssees] {
-    font-size: 0.9em; /* Tamanho da fonte ajustado */
+    font-size: 0.9em; 
     color: #333;
 }

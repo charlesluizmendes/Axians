@@ -3,7 +3,7 @@
 <div class="lista-opcoes">
     @foreach (var option in Options)
     {
-        <div class="opcao">
+        <div class="opcao" @onclick="() => HandleOptionSelected(option)">
             <span class="opcao-text">@option.Name</span>
             @if (option.Check)
             {
@@ -20,4 +20,12 @@
 @code {
     [Parameter]
     public List<Option> Options { get; set; }    
+
+    [Parameter]
+    public EventCallback<Option> OnOptionSelected { get; set; }
+
+    private void HandleOptionSelected(Option option)
+    {
+        OnOptionSelected.InvokeAsync(option);
+    }
 }

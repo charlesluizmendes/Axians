@@ -1,0 +1,59 @@
+.opcao-detalhe-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Flexbox para alinhar o título e os botões na mesma linha */
+.header-detalhe {
+    display: flex;
+    justify-content: space-between; /* Título à esquerda, botões à direita */
+    align-items: center;
+}
+
+h2 {
+    font-size: 1.8em;
+    color: #333;
+}
+
+.campos-obrigatorios {
+    color: #6366f1;
+    font-size: 0.9em;
+}
+
+/* Botões de navegação */
+.navegacao {
+    display: flex;
+    gap: 10px; /* Espaçamento entre os botões */
+}
+
+.botao-navegacao {
+    background-color: rgba(99, 102, 241, 0.1); /* Fundo com transparência */
+    border: none;
+    width: 50px;
+    height: 50px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+    .botao-navegacao:hover {
+        background-color: rgba(99, 102, 241, 0.2); /* Fundo mais escuro ao passar o mouse */
+    }
+
+    .botao-navegacao i {
+        color: #6366f1; /* Cor do ícone */
+        font-size: 1.5em;
+    }
+
+.anterior i {
+    margin-right: 5px;
+}
+
+.seguinte i {
+    margin-left: 5px;
+}

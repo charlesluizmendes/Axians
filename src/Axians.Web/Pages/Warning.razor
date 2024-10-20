@@ -5,11 +5,32 @@
 
 <Header />
 
-<br/>
+<br />
 
-<OptionList Options="options"></OptionList>
+<div class="row">
+    <div class="col-4">
+        <OptionList Options="options" OnOptionSelected="OnOptionSelected"></OptionList>
+    </div>
+    <div class="col-8">
+        @if (opcaoSelecionada != null)
+        {
+            <Detail OpcaoName="@opcaoSelecionada.Name"></Detail>
+        }
+        else
+        {
+            <p>Selecione uma opção à esquerda.</p>
+        }
+    </div>
+</div>
 
 @code {
+    private Option opcaoSelecionada;
+
+    private void OnOptionSelected(Option option)
+    {
+        opcaoSelecionada = option;
+    }
+
     [Parameter]
     public List<Option> options { get; set; } = new List<Option>()
     {
@@ -24,10 +45,6 @@
         new () { Id = 9, Name = "Opção 9", Check = true },
         new () { Id = 10, Name = "Opção 10", Check = false },
         new () { Id = 11, Name = "Opção 11", Check = false },
-        new () { Id = 11, Name = "Opção 12", Check = false },
+        new () { Id = 12, Name = "Opção 12", Check = false },
     };
-}
-
-@code {
-
 }

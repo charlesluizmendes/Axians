@@ -1,7 +1,7 @@
 .lista-opcoes {
     display: flex;
     flex-direction: column;
-    width: 300px;
+    width: auto;
     padding: 10px;
     background-color: #f4f4f9;
     border-radius: 8px;
@@ -22,16 +22,16 @@
     }
 
 .check-icon {
-    color: green; /* Ícone de círculo com check na cor verde */
+    color: green; 
     font-size: 1.2em;
 }
 
 .uncheck-icon {
-    color: gray; /* Ícone de círculo vazio na cor cinza */
+    color: gray; 
     font-size: 1.2em;
 }
 
 .opcao-text {
-    font-size: 0.9em; /* Tamanho da fonte ajustado */
+    font-size: 0.9em; 
     color: #333;
 }

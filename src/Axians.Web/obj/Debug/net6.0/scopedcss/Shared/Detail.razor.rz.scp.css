@@ -1,0 +1,59 @@
+.opcao-detalhe-container[b-s6b3lh3eje] {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Flexbox para alinhar o t�tulo e os bot�es na mesma linha */
+.header-detalhe[b-s6b3lh3eje] {
+    display: flex;
+    justify-content: space-between; /* T�tulo � esquerda, bot�es � direita */
+    align-items: center;
+}
+
+h2[b-s6b3lh3eje] {
+    font-size: 1.8em;
+    color: #333;
+}
+
+.campos-obrigatorios[b-s6b3lh3eje] {
+    color: #6366f1;
+    font-size: 0.9em;
+}
+
+/* Bot�es de navega��o */
+.navegacao[b-s6b3lh3eje] {
+    display: flex;
+    gap: 10px; /* Espa�amento entre os bot�es */
+}
+
+.botao-navegacao[b-s6b3lh3eje] {
+    background-color: rgba(99, 102, 241, 0.1); /* Fundo com transpar�ncia */
+    border: none;
+    width: 50px;
+    height: 50px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+    .botao-navegacao:hover[b-s6b3lh3eje] {
+        background-color: rgba(99, 102, 241, 0.2); /* Fundo mais escuro ao passar o mouse */
+    }
+
+    .botao-navegacao i[b-s6b3lh3eje] {
+        color: #6366f1; /* Cor do �cone */
+        font-size: 1.5em;
+    }
+
+.anterior i[b-s6b3lh3eje] {
+    margin-right: 5px;
+}
+
+.seguinte i[b-s6b3lh3eje] {
+    margin-left: 5px;
+}
