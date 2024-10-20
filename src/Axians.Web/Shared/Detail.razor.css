@@ -1,59 +1,44 @@
-.opcao-detalhe-container {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    box-sizing: border-box;
-}
-
-/* Flexbox para alinhar o título e os botões na mesma linha */
-.header-detalhe {
-    display: flex;
-    justify-content: space-between; /* Título à esquerda, botões à direita */
-    align-items: center;
-}
-
-h2 {
-    font-size: 1.8em;
-    color: #333;
-}
-
-.campos-obrigatorios {
-    color: #6366f1;
-    font-size: 0.9em;
-}
-
-/* Botões de navegação */
 .navegacao {
     display: flex;
-    gap: 10px; /* Espaçamento entre os botões */
+    align-items: center;
+    gap: 20px; 
+}
+
+.navegacao-texto {
+    font-size: 12px;
+    font-weight: bold;
+    color: #6b7280;
 }
 
 .botao-navegacao {
-    background-color: rgba(99, 102, 241, 0.1); /* Fundo com transparência */
+    background-color: rgba(99, 102, 241, 0.1); 
     border: none;
-    width: 50px;
-    height: 50px;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
     .botao-navegacao:hover {
-        background-color: rgba(99, 102, 241, 0.2); /* Fundo mais escuro ao passar o mouse */
+        background-color: rgba(99, 102, 241, 0.2); 
+    }
+   
+    .botao-navegacao.anterior {
+        margin-right: 10px;
     }
 
-    .botao-navegacao i {
-        color: #6366f1; /* Cor do ícone */
-        font-size: 1.5em;
+    .botao-navegacao.seguinte {
+        margin-left: 10px;
     }
 
-.anterior i {
-    margin-right: 5px;
+.icon-color {
+    color: #6a0dad;
 }
 
-.seguinte i {
-    margin-left: 5px;
+
+.campos-obrigatorios {
+    color: #6a0dad;
+    font-size: 0.8em;
+    margin-top: 10px;
 }

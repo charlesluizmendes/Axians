@@ -8,13 +8,13 @@
 <br />
 
 <div class="row">
-    <div class="col-4">
-        <OptionList Options="options" OnOptionSelected="OnOptionSelected"></OptionList>
+    <div class="col-3">
+        <OptionList Options="OptionsList" OnOptionSelected="HandleOptionSelected"></OptionList>
     </div>
-    <div class="col-8">
-        @if (opcaoSelecionada != null)
+    <div class="col-9">
+        @if (selectedOption is not null)
         {
-            <Detail OpcaoName="@opcaoSelecionada.Name"></Detail>
+            <Detail Options="OptionsList" OptionName="@selectedOption.Name" CurrentIndex="@selectedOption.Id"></Detail>
         }
         else
         {
@@ -24,27 +24,27 @@
 </div>
 
 @code {
-    private Option opcaoSelecionada;
+    private Option selectedOption;
 
-    private void OnOptionSelected(Option option)
+    private async Task HandleOptionSelected(Option option)
     {
-        opcaoSelecionada = option;
+        selectedOption = option;
+        await Task.CompletedTask;
     }
 
-    [Parameter]
-    public List<Option> options { get; set; } = new List<Option>()
+    public List<Option> OptionsList { get; set; } = new List<Option>()
     {
-        new () { Id = 1, Name = "Opção 1", Check = true },
-        new () { Id = 2, Name = "Opção 2", Check = true },
-        new () { Id = 3, Name = "Opção 3", Check = true },
-        new () { Id = 4, Name = "Opção 4", Check = true },
-        new () { Id = 5, Name = "Opção 5", Check = true },
-        new () { Id = 6, Name = "Opção 6", Check = true },
-        new () { Id = 7, Name = "Opção 7", Check = true },
-        new () { Id = 8, Name = "Opção 8", Check = true },
-        new () { Id = 9, Name = "Opção 9", Check = true },
-        new () { Id = 10, Name = "Opção 10", Check = false },
-        new () { Id = 11, Name = "Opção 11", Check = false },
-        new () { Id = 12, Name = "Opção 12", Check = false },
+        new () { Id = 0, Name = "Opção 1", Check = true },
+        new () { Id = 1, Name = "Opção 2", Check = true },
+        new () { Id = 2, Name = "Opção 3", Check = true },
+        new () { Id = 3, Name = "Opção 4", Check = true },
+        new () { Id = 4, Name = "Opção 5", Check = true },
+        new () { Id = 5, Name = "Opção 6", Check = true },
+        new () { Id = 6, Name = "Opção 7", Check = true },
+        new () { Id = 7, Name = "Opção 8", Check = true },
+        new () { Id = 8, Name = "Opção 9", Check = true },
+        new () { Id = 9, Name = "Opção 10", Check = false },
+        new () { Id = 10, Name = "Opção 11", Check = false },
+        new () { Id = 11, Name = "Opção 12", Check = false },
     };
 }
