@@ -153,6 +153,7 @@ a, .btn-link {
 
 .type-text {
     color: #999;
+    font-size: 22px;
 }
 
 .type-label {
@@ -178,3 +179,14 @@ a, .btn-link {
 
 /* TODO:  */
 
+.radio-count {
+    padding: 20px;
+    background-color: #f4f4f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.count-text {
+    color: #999;
+    font-size: 22px;
+}

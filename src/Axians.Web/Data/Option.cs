@@ -7,5 +7,7 @@
         public bool Check { get; set; }
 
         public IEnumerable<Tax> Taxs { get; set; }
+
+        public bool Count { get; set; }
     }
 }

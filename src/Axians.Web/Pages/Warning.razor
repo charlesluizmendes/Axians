@@ -25,7 +25,10 @@
                 @if (selectedOption is not null)
                 {
                     <OptionHeader CurrentOption="selectedOption!" IsFirstOption="IsFirstOption" IsLastOption="IsLastOption" OnPrevious="GoToPrevious" OnNext="GoToNext" />
+                    <br />
                     <TaxSelector Taxes="selectedOption.Taxs" SelectedTaxId="@selectedTaxId" OnTaxSelected="HandleTaxSelection" />
+                    <br />
+                    <Count OptionWithCount="selectedOption" OnTaxSelected="HandleTaxRadioSelection" />
                 }
             </div>
         </div>
@@ -46,7 +49,7 @@
         selectedOption = option;
         CurrentIndex = Options.IndexOf(option);
         selectedTaxId = "";
-        StateHasChanged(); 
+        StateHasChanged();
         await Task.CompletedTask;
     }
 
@@ -72,7 +75,7 @@
     {
         selectedOption = Options.ElementAtOrDefault(index);
         selectedTaxId = "";
-        StateHasChanged();  
+        StateHasChanged();
     }
 
     private void HandleTaxSelection(string taxId)
@@ -80,9 +83,16 @@
         selectedTaxId = taxId;
     }
 
+    private Task HandleTaxRadioSelection(bool isSelected)
+    {
+        selectedOption.Count = isSelected;
+        StateHasChanged(); // Atualiza a interface quando o valor do radio mudar
+        return Task.CompletedTask;
+    }
+
     public List<Option> Options { get; set; } = new List<Option>
     {
-        new() { Id = 0, Name = "Opção 1", Check = true, Taxs = new List<Tax> { new() { Id = 1, Type = "Variável" }, new() { Id = 2, Type = "Fixa" } } },
-        new() { Id = 1, Name = "Opção 2", Check = true, Taxs = new List<Tax> { new() { Id = 2, Type = "Planejada" }, new() { Id = 2, Type = "Flutuante" } } },
+        new() { Id = 0, Name = "Opção 1", Check = true, Taxs = new List<Tax> { new() { Id = 1, Type = "Variável" }, new() { Id = 2, Type = "Fixa" } }, Count = true },
+        new() { Id = 1, Name = "Opção 2", Check = true, Taxs = new List<Tax> { new() { Id = 2, Type = "Planejada" }, new() { Id = 2, Type = "Flutuante" } }, Count = false },
     };
 }
