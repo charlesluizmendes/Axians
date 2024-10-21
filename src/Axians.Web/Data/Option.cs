@@ -9,5 +9,7 @@
         public TaxType TaxType { get; set; }
 
         public bool Count { get; set; }
+
+        public Tax Tax { get; set; }
     }
 }

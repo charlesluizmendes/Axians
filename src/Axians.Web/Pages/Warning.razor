@@ -29,6 +29,8 @@
                     <TaxSelector SelectedTaxId="@selectedTaxId" OnTaxSelected="HandleTaxSelection" />
                     <br />
                     <Count OptionWithCount="@selectedOption" OnTaxSelected="HandleTaxRadioSelection" />
+                    <br />
+                    <NutsTable selectedTax="@selectedOption" OnTaxUpdated="HandleTaxUpdated" />
                 }
             </div>
         </div>
@@ -37,11 +39,10 @@
 
 @code {
     private Option selectedOption;
-    private string selectedTaxId => selectedOption?.TaxType?.Id.ToString(); // Diretamente derivado de selectedOption
+    private string selectedTaxId => selectedOption?.TaxType?.Id.ToString();
 
     public int CurrentIndex { get; set; } = 0;
 
-    // Propriedades calculadas para facilitar a navegação
     private bool IsFirstOption => CurrentIndex == 0;
     private bool IsLastOption => CurrentIndex == Options.Count - 1;
 
@@ -66,37 +67,42 @@
         }
     }
 
-    // Define a opção selecionada e atualiza o estado
     private void SetSelectedOptionByIndex(int index)
     {
         var option = Options.ElementAtOrDefault(index);
         SetSelectedOption(option);
-        CurrentIndex = index; // Atualiza o índice da opção selecionada
+        CurrentIndex = index; 
     }
 
     private void SetSelectedOption(Option option)
     {
         selectedOption = option;
-        StateHasChanged(); // Atualiza a UI ao selecionar nova opção
+        StateHasChanged(); 
     }
 
-    // Atualiza o TaxType baseado na seleção do usuário
     private void HandleTaxSelection(string taxId)
     {
         selectedOption.TaxType = new TaxType { Id = int.Parse(taxId), Value = taxId == "1" ? "Fixa" : "Variável" };
     }
 
-    // Atualiza o valor de Count (Sim/Não) na opção
     private void HandleTaxRadioSelection(bool isSelected)
     {
         selectedOption.Count = isSelected;
     }
 
-    // Exemplo de dados de opções
+    private void HandleTaxUpdated(Option updatedOption)
+    {
+        if (selectedOption?.Id == updatedOption.Id)
+        {
+            selectedOption.Tax = updatedOption.Tax;
+            StateHasChanged();
+        }
+    }
+
     public List<Option> Options { get; set; } = new List<Option>
     {
-        new() { Id = 0, Name = "Opção 1", Check = true, TaxType = new TaxType() { Id = 1, Value = "Fixa" }, Count = true },
-        new() { Id = 1, Name = "Opção 2", Check = true, TaxType = new TaxType() { Id = 2, Value = "Variável" }, Count = false },
+        new() { Id = 0, Name = "Opção 1", Check = true, TaxType = new TaxType() { Id = 1, Value = "Fixa" }, Count = true, Tax = new Tax() { Id = 1, AddTaxLocation = true, Nuts = new List<Nut>() { new() { Id = 1, Nuts2 = "Norte", Nuts3 = "Ave", Concelho = "Fafe", Tax = "25%"}, new() { Id = 1, Nuts2 = "Norte", Nuts3 = "Área Metropolitana do Porto", Concelho = "Matosinhos", Tax = "75%"} } }  },
+        new() { Id = 1, Name = "Opção 2", Check = true, TaxType = new TaxType() { Id = 2, Value = "Variável" }, Count = false, Tax = new Tax() { Id = 1, AddTaxLocation = false, Nuts = new List<Nut>() { new() { Id = 1, Nuts2 = "Norte", Nuts3 = "Ave", Concelho = "Fafe", Tax = "25%"}, new() { Id = 1, Nuts2 = "Norte", Nuts3 = "Área Metropolitana do Porto", Concelho = "Matosinhos", Tax = "75%"} } } },
     };
 }
 

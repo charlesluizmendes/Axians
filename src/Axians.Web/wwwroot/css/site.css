@@ -190,3 +190,102 @@ a, .btn-link {
     color: #999;
     font-size: 22px;
 }
+
+/* TODO:  */
+
+.custom-switch .form-check-input {
+    width: 55px;
+    height: 30px;
+}
+
+    .custom-switch .form-check-input:checked {
+        background-color: #7f5fe8; /* Cor do switch ativado */
+    }
+
+    .custom-switch .form-check-input::before {
+        width: 26px;
+        height: 26px;
+        transform: translateX(4px); /* Ajuste da posição do botão ao centro */
+    }
+
+    .custom-switch .form-check-input:checked::before {
+        transform: translateX(30px); /* Movimento do círculo quando ativado */
+    }
+
+
+.add-tax-button {
+    margin-bottom: 15px;
+    padding: 8px 16px;
+    border: 1px solid #7f5fe8;
+    background-color: white;
+    color: #7f5fe8;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+    .add-tax-button:hover {
+        background-color: rgba(99, 102, 241, 0.2);
+    }
+
+    .add-tax-button i {
+        margin-right: 5px;
+    }
+
+thead {
+    background-color: #f4f4f9;
+}
+
+tbody tr {
+    background-color: #ffffff;
+}
+
+th, td {
+    text-align: left;
+}
+
+
+.trash-color {
+    color: #7f5fe8;
+    border-color: #7f5fe8;
+}
+
+.pagination {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Espaçamento entre os itens */
+}
+
+    .pagination .page-item {
+        list-style: none;
+    }
+
+    .pagination .page-link {
+        color: #7f56d9; /* Cor roxa para os links */
+        text-decoration: none;
+        font-weight: bold;
+        padding: 8px;
+        display: inline-block;
+        border-radius: 50%;
+        border: none;
+        background-color: transparent; /* Fundo transparente para os itens não ativos */
+        transition: background-color 0.3s;
+    }
+
+    .pagination .page-item.active .page-link {
+        background-color: #f4f4f9; /* Fundo claro para o item ativo */
+        color: #7f56d9; /* Cor roxa para o texto */
+        font-weight: bold;
+    }
+
+    .pagination .page-item.disabled .page-link {
+        color: #ccc; /* Cor mais clara para indicar desativação */
+        pointer-events: none; /* Remover a interação */
+    }
+
+    .pagination .page-link:hover {
+        background-color: #ece9ff; /* Feedback visual ao passar o mouse */
+    }
+
+    .pagination .page-link svg {
+        vertical-align: middle;
+    }
