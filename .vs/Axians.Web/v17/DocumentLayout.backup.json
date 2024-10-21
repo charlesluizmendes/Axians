@@ -1,16 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\Visual Studio\\Axians.Web\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{EE69C0ED-770B-4E14-A873-1E29A18751FA}|src\\Axians.Web\\Axians.Web.csproj|d:\\visual studio\\axians.web\\src\\axians.web\\shared\\nuttable.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{EE69C0ED-770B-4E14-A873-1E29A18751FA}|src\\Axians.Web\\Axians.Web.csproj|solutionrelative:src\\axians.web\\shared\\nuttable.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EE69C0ED-770B-4E14-A873-1E29A18751FA}|src\\Axians.Web\\Axians.Web.csproj|d:\\visual studio\\axians.web\\src\\axians.web\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{EE69C0ED-770B-4E14-A873-1E29A18751FA}|src\\Axians.Web\\Axians.Web.csproj|solutionrelative:src\\axians.web\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -18,7 +9,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 15,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -75,32 +66,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "site.css",
-              "DocumentMoniker": "D:\\Visual Studio\\Axians.Web\\src\\Axians.Web\\wwwroot\\css\\site.css",
-              "RelativeDocumentMoniker": "src\\Axians.Web\\wwwroot\\css\\site.css",
-              "ToolTip": "D:\\Visual Studio\\Axians.Web\\src\\Axians.Web\\wwwroot\\css\\site.css",
-              "RelativeToolTip": "src\\Axians.Web\\wwwroot\\css\\site.css",
-              "ViewState": "AgIAAP0AAAAAAAAAAAAiwCoBAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-10-21T06:43:47.015Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "NutTable.razor",
-              "DocumentMoniker": "D:\\Visual Studio\\Axians.Web\\src\\Axians.Web\\Shared\\NutTable.razor",
-              "RelativeDocumentMoniker": "src\\Axians.Web\\Shared\\NutTable.razor",
-              "ToolTip": "D:\\Visual Studio\\Axians.Web\\src\\Axians.Web\\Shared\\NutTable.razor",
-              "RelativeToolTip": "src\\Axians.Web\\Shared\\NutTable.razor",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAAAFgAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-21T06:41:36.884Z",
-              "EditorCaption": ""
             }
           ]
         }
