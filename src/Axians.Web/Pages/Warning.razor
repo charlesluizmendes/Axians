@@ -14,7 +14,7 @@
         <div class="list-option">
             @foreach (var option in Options)
             {
-                <OptionItem Option="option" IsSelected="option == selectedOption" OnOptionSelected="HandleOptionSelected" />
+                <OptionList Option="option" IsSelected="option == selectedOption" OnOptionSelected="HandleOptionSelected" />
             }
         </div>
     </div>
@@ -28,9 +28,10 @@
                     <br />
                     <TaxSelector SelectedTaxId="@selectedTaxId" OnTaxSelected="HandleTaxSelection" />
                     <br />
-                    <Count OptionWithCount="@selectedOption" OnTaxSelected="HandleTaxRadioSelection" />
+                    <CountText OptionWithCount="@selectedOption" OnTaxSelected="HandleTaxRadioSelection" />
                     <br />
-                    <NutsTable selectedTax="@selectedOption" OnTaxUpdated="HandleTaxUpdated" />
+                    <NutTable selectedTax="@selectedOption" OnTaxUpdated="HandleTaxUpdated" />
+                    <br />
                 }
             </div>
         </div>
@@ -102,7 +103,17 @@
     public List<Option> Options { get; set; } = new List<Option>
     {
         new() { Id = 0, Name = "Opção 1", Check = true, TaxType = new TaxType() { Id = 1, Value = "Fixa" }, Count = true, Tax = new Tax() { Id = 1, AddTaxLocation = true, Nuts = new List<Nut>() { new() { Id = 1, Nuts2 = "Norte", Nuts3 = "Ave", Concelho = "Fafe", Tax = "25%"}, new() { Id = 1, Nuts2 = "Norte", Nuts3 = "Área Metropolitana do Porto", Concelho = "Matosinhos", Tax = "75%"} } }  },
-        new() { Id = 1, Name = "Opção 2", Check = true, TaxType = new TaxType() { Id = 2, Value = "Variável" }, Count = false, Tax = new Tax() { Id = 1, AddTaxLocation = false, Nuts = new List<Nut>() { new() { Id = 1, Nuts2 = "Norte", Nuts3 = "Ave", Concelho = "Fafe", Tax = "25%"}, new() { Id = 1, Nuts2 = "Norte", Nuts3 = "Área Metropolitana do Porto", Concelho = "Matosinhos", Tax = "75%"} } } },
+        new() { Id = 1, Name = "Opção 2", Check = true, TaxType = new TaxType() { Id = 2, Value = "Variável" }, Count = false, Tax = new Tax() { Id = 1, AddTaxLocation = false, Nuts = new List<Nut>() { new() { Id = 1, Nuts2 = "Norte", Nuts3 = "Ave", Concelho = "Fafe", Tax = "25%"}, new() { Id = 1, Nuts2 = "Norte", Nuts3 = "Área Metropolitana do Porto", Concelho = "Matosinhos", Tax = "55%"} } } },
+        new() { Id = 2, Name = "Opção 3", Check = true, TaxType = new TaxType() { Id = 2, Value = "Fixa" }, Count = false, Tax = new Tax() { Id = 1, AddTaxLocation = true, Nuts = new List<Nut>() { new() { Id = 1, Nuts2 = "Norte", Nuts3 = "Ave", Concelho = "Fafe", Tax = "25%"}, new() { Id = 1, Nuts2 = "Norte", Nuts3 = "Área Metropolitana de Lisboa", Concelho = "Matosinhos", Tax = "7%"} } } },
+        new() { Id = 3, Name = "Opção 4", Check = true, TaxType = new TaxType() { Id = 2, Value = "Fixa" }, Count = true, Tax = new Tax() { Id = 1, AddTaxLocation = true, Nuts = new List<Nut>() { new() { Id = 1, Nuts2 = "Norte", Nuts3 = "Ave", Concelho = "Fafe", Tax = "25%"}, new() { Id = 1, Nuts2 = "Oeste", Nuts3 = "Área Metropolitana do Porto", Concelho = "Matosinhos", Tax = "85%"} } } },
+        new() { Id = 4, Name = "Opção 5", Check = true, TaxType = new TaxType() { Id = 2, Value = "Variável" }, Count = true, Tax = new Tax() { Id = 1, AddTaxLocation = true, Nuts = new List<Nut>() { new() { Id = 1, Nuts2 = "Norte", Nuts3 = "Ave", Concelho = "Fafe", Tax = "25%"}, new() { Id = 1, Nuts2 = "Centro", Nuts3 = "Área Metropolitanade Lisboa", Concelho = "Matosinhos", Tax = "75%"} } } },
+        new() { Id = 5, Name = "Opção 6", Check = true, TaxType = new TaxType() { Id = 2, Value = "Variável" }, Count = true, Tax = new Tax() { Id = 1, AddTaxLocation = false, Nuts = new List<Nut>() { new() { Id = 1, Nuts2 = "Norte", Nuts3 = "Ave", Concelho = "Fafe", Tax = "25%"}, new() { Id = 1, Nuts2 = "Norte", Nuts3 = "Área Metropolitana do Porto", Concelho = "Matosinhos", Tax = "25%"} } } },
+        new() { Id = 6, Name = "Opção 7", Check = true, TaxType = new TaxType() { Id = 2, Value = "Fixa" }, Count = false, Tax = new Tax() { Id = 1, AddTaxLocation = true, Nuts = new List<Nut>() { new() { Id = 1, Nuts2 = "Norte", Nuts3 = "Ave", Concelho = "Fafe", Tax = "25%"}, new() { Id = 1, Nuts2 = "Norte", Nuts3 = "Área Metropolitana de Lisboa", Concelho = "Matosinhos", Tax = "75%"} } } },
+        new() { Id = 7, Name = "Opção 8", Check = true, TaxType = new TaxType() { Id = 2, Value = "Fixa" }, Count = true, Tax = new Tax() { Id = 1, AddTaxLocation = false, Nuts = new List<Nut>() { new() { Id = 1, Nuts2 = "Norte", Nuts3 = "Ave", Concelho = "Fafe", Tax = "25%"}, new() { Id = 1, Nuts2 = "Norte", Nuts3 = "Área Metropolitana do Porto", Concelho = "Matosinhos", Tax = "37%"} } } },
+        new() { Id = 8, Name = "Opção 9", Check = true, TaxType = new TaxType() { Id = 2, Value = "Variável" }, Count = false, Tax = new Tax() { Id = 1, AddTaxLocation = false, Nuts = new List<Nut>() { new() { Id = 1, Nuts2 = "Norte", Nuts3 = "Ave", Concelho = "Fafe", Tax = "25%"}, new() { Id = 1, Nuts2 = "Sul", Nuts3 = "Área Metropolitana do Porto", Concelho = "Matosinhos", Tax = "75%"} } } },
+        new() { Id = 9, Name = "Opção 10", Check = false, TaxType = new TaxType() { Id = 2, Value = "Fixa" }, Count = true, Tax = new Tax() { Id = 1, AddTaxLocation = true, Nuts = new List<Nut>() { new() { Id = 1, Nuts2 = "Norte", Nuts3 = "Ave", Concelho = "Fafe", Tax = "25%"}, new() { Id = 1, Nuts2 = "Norte", Nuts3 = "Área Metropolitana do Porto", Concelho = "Matosinhos", Tax = "13%"} } } },
+        new() { Id = 10, Name = "Opção 11", Check = false, TaxType = new TaxType() { Id = 2, Value = "Variável" }, Count = true, Tax = new Tax() { Id = 1, AddTaxLocation = false, Nuts = new List<Nut>() { new() { Id = 1, Nuts2 = "Norte", Nuts3 = "Ave", Concelho = "Fafe", Tax = "25%"}, new() { Id = 1, Nuts2 = "Norte", Nuts3 = "Área Metropolitana do Porto", Concelho = "Matosinhos", Tax = "75%"} } } },
+        new() { Id = 11, Name = "Opção 12", Check = false, TaxType = new TaxType() { Id = 2, Value = "Fixa" }, Count = false, Tax = new Tax() { Id = 1, AddTaxLocation = true, Nuts = new List<Nut>() { new() { Id = 1, Nuts2 = "Norte", Nuts3 = "Ave", Concelho = "Fafe", Tax = "25%"}, new() { Id = 1, Nuts2 = "Oeste", Nuts3 = "Área Metropolitana de Lisboa", Concelho = "Matosinhos", Tax = "84%"} } } },
     };
 }
 

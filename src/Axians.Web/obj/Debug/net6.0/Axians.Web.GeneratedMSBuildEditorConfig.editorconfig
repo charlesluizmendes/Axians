@@ -30,20 +30,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV2FybmluZy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Visual Studio/Axians.Web/src/Axians.Web/Shared/Count.razor]
-build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvdW50LnJhem9y
+[D:/Visual Studio/Axians.Web/src/Axians.Web/Shared/CountText.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvdW50VGV4dC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Visual Studio/Axians.Web/src/Axians.Web/Shared/NutsTable.razor]
-build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE51dHNUYWJsZS5yYXpvcg==
+[D:/Visual Studio/Axians.Web/src/Axians.Web/Shared/NutTable.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE51dFRhYmxlLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Visual Studio/Axians.Web/src/Axians.Web/Shared/OptionHeader.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE9wdGlvbkhlYWRlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Visual Studio/Axians.Web/src/Axians.Web/Shared/OptionItem.razor]
-build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE9wdGlvbkl0ZW0ucmF6b3I=
+[D:/Visual Studio/Axians.Web/src/Axians.Web/Shared/OptionList.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE9wdGlvbkxpc3QucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Visual Studio/Axians.Web/src/Axians.Web/Shared/TaxSelector.razor]

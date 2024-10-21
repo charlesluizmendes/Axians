@@ -193,23 +193,31 @@ a, .btn-link {
 
 /* TODO:  */
 
+.check-large {
+    transform: scale(1.5);
+    width: 15px;
+    height: 15px;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
 .custom-switch .form-check-input {
     width: 55px;
     height: 30px;
 }
 
     .custom-switch .form-check-input:checked {
-        background-color: #7f5fe8; /* Cor do switch ativado */
+        background-color: #7f5fe8; 
     }
 
     .custom-switch .form-check-input::before {
         width: 26px;
         height: 26px;
-        transform: translateX(4px); /* Ajuste da posição do botão ao centro */
+        transform: translateX(4px); 
     }
 
     .custom-switch .form-check-input:checked::before {
-        transform: translateX(30px); /* Movimento do círculo quando ativado */
+        transform: translateX(30px); 
     }
 
 
@@ -252,7 +260,7 @@ th, td {
 .pagination {
     display: flex;
     align-items: center;
-    gap: 8px; /* Espaçamento entre os itens */
+    gap: 8px; 
 }
 
     .pagination .page-item {
@@ -260,30 +268,30 @@ th, td {
     }
 
     .pagination .page-link {
-        color: #7f56d9; /* Cor roxa para os links */
+        color: #7f56d9; 
         text-decoration: none;
         font-weight: bold;
-        padding: 8px;
+        padding: 1px;
         display: inline-block;
         border-radius: 50%;
         border: none;
-        background-color: transparent; /* Fundo transparente para os itens não ativos */
+        background-color: transparent;
         transition: background-color 0.3s;
     }
 
     .pagination .page-item.active .page-link {
-        background-color: #f4f4f9; /* Fundo claro para o item ativo */
-        color: #7f56d9; /* Cor roxa para o texto */
+        background-color: #f4f4f9; 
+        color: #7f56d9; 
         font-weight: bold;
     }
 
     .pagination .page-item.disabled .page-link {
-        color: #ccc; /* Cor mais clara para indicar desativação */
-        pointer-events: none; /* Remover a interação */
+        color: #ccc; 
+        pointer-events: none; 
     }
 
     .pagination .page-link:hover {
-        background-color: #ece9ff; /* Feedback visual ao passar o mouse */
+        background-color: #ece9ff; 
     }
 
     .pagination .page-link svg {
