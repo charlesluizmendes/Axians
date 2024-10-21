@@ -24,11 +24,13 @@
             <table class="table table-striped">
                 <thead>
                     <tr>
-                        <th scope="col"></th>
-                        <th scope="col">NUTS II</th>
-                        <th scope="col">NUTS III</th>
-                        <th scope="col">Concelho</th>
-                        <th scope="col">Taxa (%)</th>
+                        <th scope="col" class="col-1">
+                            <input type="checkbox" class="check-large" @onchange="ToggleSelectAll" />
+                        </th>
+                        <th scope="col" class="col-3">NUTS II</th>
+                        <th scope="col" class="col-3">NUTS III</th>
+                        <th scope="col" class="col-4">Concelho</th>
+                        <th scope="col" class="col-1">Taxa (%)</th>
                         <th scope="col"></th>
                     </tr>
                 </thead>
@@ -39,7 +41,7 @@
                         {
                             <tr>
                                 <td>
-                                    <input type="checkbox" class="check-large" />
+                                    <input type="checkbox" class="check-large" value="@nuts.Id" checked="@selectedNutsIds.Contains(nuts.Id)" @onchange="(e) => HandleCheckboxChanged(nuts.Id, (bool)e.Value)" />
                                 </td>
                                 <td>@nuts.Nuts2</td>
                                 <td>@nuts.Nuts3</td>
@@ -94,6 +96,7 @@
     [Parameter] public Option selectedTax { get; set; }
     [Parameter] public EventCallback<Option> OnTaxUpdated { get; set; }
 
+    private List<int> selectedNutsIds = new List<int>();
     private int itemsPerPage = 10;
     private int currentPage = 1;
     private int totalPages => (int)Math.Ceiling((double)(selectedTax?.Tax?.Nuts?.Count ?? 0) / itemsPerPage);
@@ -110,6 +113,44 @@
         StateHasChanged();
     }
 
+    private void HandleCheckboxChanged(int id, bool isSelected)
+    {
+        if (isSelected)
+        {
+            if (!selectedNutsIds.Contains(id))
+            {
+                selectedNutsIds.Add(id);
+            }
+        }
+        else
+        {
+            selectedNutsIds.Remove(id);
+        }
+    }
+
+    private void ToggleSelectAll(ChangeEventArgs e)
+    {
+        bool isChecked = (bool)e.Value;
+
+        if (isChecked)
+        {
+            foreach (var nuts in PaginatedNuts)
+            {
+                if (!selectedNutsIds.Contains(nuts.Id))
+                {
+                    selectedNutsIds.Add(nuts.Id);
+                }
+            }
+        }
+        else
+        {
+            foreach (var nuts in PaginatedNuts)
+            {
+                selectedNutsIds.Remove(nuts.Id);
+            }
+        }
+    }
+    
     private void UpdatePagination()
     {
         currentPage = Math.Min(currentPage, totalPages);

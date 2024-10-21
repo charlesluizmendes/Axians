@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Axians.Web")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+72d136207ec519a6d3ba842d997154ea0264ae19")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f3b7a393601eccc0b3734198f0badd3426965718")]
 [assembly: System.Reflection.AssemblyProductAttribute("Axians.Web")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Axians.Web")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
