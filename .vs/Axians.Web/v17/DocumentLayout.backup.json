@@ -3,16 +3,12 @@
   "WorkspaceRootPath": "D:\\Visual Studio\\Axians.Web\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EE69C0ED-770B-4E14-A873-1E29A18751FA}|src\\Axians.Web\\Axians.Web.csproj|d:\\visual studio\\axians.web\\src\\axians.web\\shared\\taxselector.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{EE69C0ED-770B-4E14-A873-1E29A18751FA}|src\\Axians.Web\\Axians.Web.csproj|solutionrelative:src\\axians.web\\shared\\taxselector.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EE69C0ED-770B-4E14-A873-1E29A18751FA}|src\\Axians.Web\\Axians.Web.csproj|d:\\visual studio\\axians.web\\src\\axians.web\\shared\\count.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{EE69C0ED-770B-4E14-A873-1E29A18751FA}|src\\Axians.Web\\Axians.Web.csproj|solutionrelative:src\\axians.web\\shared\\count.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{EE69C0ED-770B-4E14-A873-1E29A18751FA}|src\\Axians.Web\\Axians.Web.csproj|d:\\visual studio\\axians.web\\src\\axians.web\\pages\\warning.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{EE69C0ED-770B-4E14-A873-1E29A18751FA}|src\\Axians.Web\\Axians.Web.csproj|solutionrelative:src\\axians.web\\pages\\warning.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE69C0ED-770B-4E14-A873-1E29A18751FA}|src\\Axians.Web\\Axians.Web.csproj|d:\\visual studio\\axians.web\\src\\axians.web\\shared\\taxselector.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EE69C0ED-770B-4E14-A873-1E29A18751FA}|src\\Axians.Web\\Axians.Web.csproj|solutionrelative:src\\axians.web\\shared\\taxselector.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,33 +18,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 16,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Warning.razor",
               "DocumentMoniker": "D:\\Visual Studio\\Axians.Web\\src\\Axians.Web\\Pages\\Warning.razor",
               "RelativeDocumentMoniker": "src\\Axians.Web\\Pages\\Warning.razor",
               "ToolTip": "D:\\Visual Studio\\Axians.Web\\src\\Axians.Web\\Pages\\Warning.razor",
               "RelativeToolTip": "src\\Axians.Web\\Pages\\Warning.razor",
-              "ViewState": "AgIAADwAAAAAAAAAAAAAAGEAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAABwAAAAAAAAAAAAswGUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-21T02:56:37.761Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Count.razor",
-              "DocumentMoniker": "D:\\Visual Studio\\Axians.Web\\src\\Axians.Web\\Shared\\Count.razor",
-              "RelativeDocumentMoniker": "src\\Axians.Web\\Shared\\Count.razor",
-              "ToolTip": "D:\\Visual Studio\\Axians.Web\\src\\Axians.Web\\Shared\\Count.razor",
-              "RelativeToolTip": "src\\Axians.Web\\Shared\\Count.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-21T03:06:43.657Z",
+              "WhenOpened": "2024-10-21T03:52:34.042Z",
               "IsPinned": true,
               "EditorCaption": ""
             },
@@ -110,15 +92,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "TaxSelector.razor",
               "DocumentMoniker": "D:\\Visual Studio\\Axians.Web\\src\\Axians.Web\\Shared\\TaxSelector.razor",
               "RelativeDocumentMoniker": "src\\Axians.Web\\Shared\\TaxSelector.razor",
               "ToolTip": "D:\\Visual Studio\\Axians.Web\\src\\Axians.Web\\Shared\\TaxSelector.razor",
               "RelativeToolTip": "src\\Axians.Web\\Shared\\TaxSelector.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-21T03:43:56.72Z",
+              "WhenOpened": "2024-10-21T03:55:54.51Z",
               "EditorCaption": ""
             }
           ]

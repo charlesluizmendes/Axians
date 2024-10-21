@@ -15,10 +15,8 @@
             <div class="col-md-2">
                 <select class="select-custom mt-2" @bind="SelectedTaxId">
                     <option value="">Selecionar</option>
-                    @foreach (var tax in Taxes)
-                    {
-                        <option value="@tax.Id">@tax.Type</option>
-                    }
+                    <option value="1">Fixa</option>
+                    <option value="2">Variável</option>
                 </select>
             </div>
         </div>
@@ -27,7 +25,6 @@
 </div>
 
 @code {
-    [Parameter] public IEnumerable<Tax> Taxes { get; set; }
     [Parameter] public string SelectedTaxId { get; set; }
     [Parameter] public EventCallback<string> OnTaxSelected { get; set; }
 }

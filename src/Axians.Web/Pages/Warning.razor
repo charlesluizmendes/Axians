@@ -26,9 +26,9 @@
                 {
                     <OptionHeader CurrentOption="selectedOption!" IsFirstOption="IsFirstOption" IsLastOption="IsLastOption" OnPrevious="GoToPrevious" OnNext="GoToNext" />
                     <br />
-                    <TaxSelector Taxes="selectedOption.Taxs" SelectedTaxId="@selectedTaxId" OnTaxSelected="HandleTaxSelection" />
+                    <TaxSelector SelectedTaxId="@selectedTaxId" OnTaxSelected="HandleTaxSelection" />
                     <br />
-                    <Count OptionWithCount="selectedOption" OnTaxSelected="HandleTaxRadioSelection" />
+                    <Count OptionWithCount="@selectedOption" OnTaxSelected="HandleTaxRadioSelection" />
                 }
             </div>
         </div>
@@ -37,28 +37,24 @@
 
 @code {
     private Option selectedOption;
-    private string selectedTaxId;
+    private string selectedTaxId => selectedOption?.TaxType?.Id.ToString(); // Diretamente derivado de selectedOption
 
     public int CurrentIndex { get; set; } = 0;
 
+    // Propriedades calculadas para facilitar a navegação
     private bool IsFirstOption => CurrentIndex == 0;
     private bool IsLastOption => CurrentIndex == Options.Count - 1;
 
-    private async Task HandleOptionSelected(Option option)
+    private void HandleOptionSelected(Option option)
     {
-        selectedOption = option;
-        CurrentIndex = Options.IndexOf(option);
-        selectedTaxId = "";
-        StateHasChanged();
-        await Task.CompletedTask;
+        SetSelectedOption(option);
     }
 
     private void GoToPrevious()
     {
         if (!IsFirstOption)
         {
-            CurrentIndex--;
-            SetSelectedOptionByIndex(CurrentIndex);
+            SetSelectedOptionByIndex(CurrentIndex - 1);
         }
     }
 
@@ -66,33 +62,41 @@
     {
         if (!IsLastOption)
         {
-            CurrentIndex++;
-            SetSelectedOptionByIndex(CurrentIndex);
+            SetSelectedOptionByIndex(CurrentIndex + 1);
         }
     }
 
+    // Define a opção selecionada e atualiza o estado
     private void SetSelectedOptionByIndex(int index)
     {
-        selectedOption = Options.ElementAtOrDefault(index);
-        selectedTaxId = "";
-        StateHasChanged();
+        var option = Options.ElementAtOrDefault(index);
+        SetSelectedOption(option);
+        CurrentIndex = index; // Atualiza o índice da opção selecionada
     }
 
+    private void SetSelectedOption(Option option)
+    {
+        selectedOption = option;
+        StateHasChanged(); // Atualiza a UI ao selecionar nova opção
+    }
+
+    // Atualiza o TaxType baseado na seleção do usuário
     private void HandleTaxSelection(string taxId)
     {
-        selectedTaxId = taxId;
+        selectedOption.TaxType = new TaxType { Id = int.Parse(taxId), Value = taxId == "1" ? "Fixa" : "Variável" };
     }
 
-    private Task HandleTaxRadioSelection(bool isSelected)
+    // Atualiza o valor de Count (Sim/Não) na opção
+    private void HandleTaxRadioSelection(bool isSelected)
     {
         selectedOption.Count = isSelected;
-        StateHasChanged(); // Atualiza a interface quando o valor do radio mudar
-        return Task.CompletedTask;
     }
 
+    // Exemplo de dados de opções
     public List<Option> Options { get; set; } = new List<Option>
     {
-        new() { Id = 0, Name = "Opção 1", Check = true, Taxs = new List<Tax> { new() { Id = 1, Type = "Variável" }, new() { Id = 2, Type = "Fixa" } }, Count = true },
-        new() { Id = 1, Name = "Opção 2", Check = true, Taxs = new List<Tax> { new() { Id = 2, Type = "Planejada" }, new() { Id = 2, Type = "Flutuante" } }, Count = false },
+        new() { Id = 0, Name = "Opção 1", Check = true, TaxType = new TaxType() { Id = 1, Value = "Fixa" }, Count = true },
+        new() { Id = 1, Name = "Opção 2", Check = true, TaxType = new TaxType() { Id = 2, Value = "Variável" }, Count = false },
     };
 }
+

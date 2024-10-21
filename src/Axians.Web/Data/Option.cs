@@ -6,7 +6,7 @@
         public string Name { get; set; }
         public bool Check { get; set; }
 
-        public IEnumerable<Tax> Taxs { get; set; }
+        public TaxType TaxType { get; set; }
 
         public bool Count { get; set; }
     }
