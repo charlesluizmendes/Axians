@@ -1,37 +1,31 @@
-.lista-opcoes {
-    display: flex;
-    flex-direction: column;
-    width: auto;
+.list-option {
     padding: 10px;
     background-color: #f4f4f9;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.opcao {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.option {
     padding: 10px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
-    .opcao:hover {
+    .option:hover {
         background-color: #e0e0e0;
     }
 
 .check-icon {
-    color: green; 
+    color: green;
     font-size: 1.2em;
 }
 
 .uncheck-icon {
-    color: gray; 
+    color: gray;
     font-size: 1.2em;
 }
 
-.opcao-text {
-    font-size: 0.9em; 
+.option-text {
+    font-size: 0.9em;
     color: #333;
 }

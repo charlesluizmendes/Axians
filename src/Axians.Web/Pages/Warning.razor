@@ -3,24 +3,30 @@
 
 <PageTitle>Avisos</PageTitle>
 
-<Header />
-
-<br />
-
 <div class="row">
-    <div class="col-3">
+    <div class="col-md-12">
+        <Header />
+    </div>
+</div>
+<br />
+<div class="row">
+    <div class="col-md-3">
         <OptionList Options="OptionsList" OnOptionSelected="HandleOptionSelected"></OptionList>
     </div>
-    <div class="col-9">
-        @if (selectedOption is not null)
-        {
-            <Detail Options="OptionsList" CurrentIndex="@selectedOption.Id"></Detail>
-        }
-        else
-        {
-            <p>Selecione uma opção à esquerda.</p>
-        }
-    </div>
+    <div class="col-md-9">
+        <div class="row">
+            <div class="col-md-12">
+                @if (selectedOption is not null)
+                {
+                    <Detail Options="OptionsList" CurrentIndex="@selectedOption.Id"></Detail>
+                }
+                else
+                {
+                    <p>Selecione uma opção à esquerda.</p>
+                }
+            </div>
+        </div>    
+    </div>    
 </div>
 
 @code {

@@ -1,17 +1,23 @@
-.navegacao {
-    display: flex;
-    align-items: center;
-    gap: 20px; 
+.navigation {
+    gap: 20px;
 }
 
-.navegacao-texto {
+.navigation-text {
     font-size: 12px;
     font-weight: bold;
     color: #6b7280;
 }
 
-.botao-navegacao {
-    background-color: rgba(99, 102, 241, 0.1); 
+    .navigation-text.previous {
+        margin-left: 10px;
+    }
+
+    .navigation-text.following {
+        margin-right: 10px;
+    }
+
+.button-navigation {
+    background-color: rgba(99, 102, 241, 0.1);
     border: none;
     width: 30px;
     height: 30px;
@@ -20,25 +26,19 @@
     transition: background-color 0.3s ease;
 }
 
-    .botao-navegacao:hover {
-        background-color: rgba(99, 102, 241, 0.2); 
-    }
-   
-    .botao-navegacao.anterior {
-        margin-right: 10px;
-    }
-
-    .botao-navegacao.seguinte {
-        margin-left: 10px;
+    .button-navigation:hover {
+        background-color: rgba(99, 102, 241, 0.2);
     }
 
 .icon-color {
     color: #6a0dad;
 }
 
+.block-required-field {
+    margin-top: 15px;
+}
 
-.campos-obrigatorios {
+.required-field {
     color: #6a0dad;
     font-size: 0.8em;
-    margin-top: 10px;
 }

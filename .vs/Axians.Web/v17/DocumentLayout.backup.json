@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "D:\\Visual Studio\\Axians.Web\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EE69C0ED-770B-4E14-A873-1E29A18751FA}|src\\Axians.Web\\Axians.Web.csproj|d:\\visual studio\\axians.web\\src\\axians.web\\shared\\detail.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{EE69C0ED-770B-4E14-A873-1E29A18751FA}|src\\Axians.Web\\Axians.Web.csproj|solutionrelative:src\\axians.web\\shared\\detail.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{EE69C0ED-770B-4E14-A873-1E29A18751FA}|src\\Axians.Web\\Axians.Web.csproj|d:\\visual studio\\axians.web\\src\\axians.web\\shared\\optionlist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EE69C0ED-770B-4E14-A873-1E29A18751FA}|src\\Axians.Web\\Axians.Web.csproj|solutionrelative:src\\axians.web\\shared\\optionlist.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EE69C0ED-770B-4E14-A873-1E29A18751FA}|src\\Axians.Web\\Axians.Web.csproj|d:\\visual studio\\axians.web\\src\\axians.web\\pages\\warning.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{EE69C0ED-770B-4E14-A873-1E29A18751FA}|src\\Axians.Web\\Axians.Web.csproj|solutionrelative:src\\axians.web\\pages\\warning.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{EE69C0ED-770B-4E14-A873-1E29A18751FA}|src\\Axians.Web\\Axians.Web.csproj|d:\\visual studio\\axians.web\\src\\axians.web\\shared\\optionlist.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{EE69C0ED-770B-4E14-A873-1E29A18751FA}|src\\Axians.Web\\Axians.Web.csproj|solutionrelative:src\\axians.web\\shared\\optionlist.razor.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -79,27 +79,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Warning.razor",
-              "DocumentMoniker": "D:\\Visual Studio\\Axians.Web\\src\\Axians.Web\\Pages\\Warning.razor",
-              "RelativeDocumentMoniker": "src\\Axians.Web\\Pages\\Warning.razor",
-              "ToolTip": "D:\\Visual Studio\\Axians.Web\\src\\Axians.Web\\Pages\\Warning.razor",
-              "RelativeToolTip": "src\\Axians.Web\\Pages\\Warning.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-20T06:58:23.838Z",
+              "Title": "OptionList.razor.css",
+              "DocumentMoniker": "D:\\Visual Studio\\Axians.Web\\src\\Axians.Web\\Shared\\OptionList.razor.css",
+              "RelativeDocumentMoniker": "src\\Axians.Web\\Shared\\OptionList.razor.css",
+              "ToolTip": "D:\\Visual Studio\\Axians.Web\\src\\Axians.Web\\Shared\\OptionList.razor.css",
+              "RelativeToolTip": "src\\Axians.Web\\Shared\\OptionList.razor.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-10-21T00:11:49.922Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Detail.razor",
-              "DocumentMoniker": "D:\\Visual Studio\\Axians.Web\\src\\Axians.Web\\Shared\\Detail.razor",
-              "RelativeDocumentMoniker": "src\\Axians.Web\\Shared\\Detail.razor",
-              "ToolTip": "D:\\Visual Studio\\Axians.Web\\src\\Axians.Web\\Shared\\Detail.razor",
-              "RelativeToolTip": "src\\Axians.Web\\Shared\\Detail.razor",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAAbAAAAAAAAAA==",
+              "Title": "OptionList.razor",
+              "DocumentMoniker": "D:\\Visual Studio\\Axians.Web\\src\\Axians.Web\\Shared\\OptionList.razor",
+              "RelativeDocumentMoniker": "src\\Axians.Web\\Shared\\OptionList.razor",
+              "ToolTip": "D:\\Visual Studio\\Axians.Web\\src\\Axians.Web\\Shared\\OptionList.razor",
+              "RelativeToolTip": "src\\Axians.Web\\Shared\\OptionList.razor",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-20T06:57:47.936Z",
+              "WhenOpened": "2024-10-21T00:11:49.097Z",
               "EditorCaption": ""
             }
           ]

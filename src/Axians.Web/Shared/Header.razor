@@ -1,33 +1,40 @@
-﻿<div class="header-container">
-    <span class="breadcrumb">@Menu</span>
-
-        <div class="content-row">
-            <div class="left-section">
-                <button class="back-button">
-                    <i class="fas fa-arrow-left fa-sm"></i>
-                </button>
-            <h1 class="custom-title">NOVO @NewItem</h1>
-                <div class="status">
-                    <i class="fas fa-pen"></i>
-                    <span>EM PREENCHIMENTO</span>
-                </div>
-            </div>
-
-            <div class="right-section">
-                <button class="save-button ">
-                    <i class="fas fa-save"></i> GUARDAR ALTERAÇÕES
-                </button>
-                <button class="validate-button">
-                    VALIDAR
-                </button>
-                <button class="publish-button" disabled>
-                    <i class="fas fa-check fa-sm"></i> PUBLICAR
-                </button>
-            </div>
+﻿<div class="row">
+    <div class="col-md-1">
+        <span class="warning">AVISOS</span>
+    </div>
+</div>
+<div class="row align-items-center">
+    <div class="col-md-5 d-flex justify-content-start align-items-center">
+        <div class="me-3">
+            <button class="back-button">
+                <i class="fas fa-arrow-left fa-sm"></i>
+            </button>
         </div>
+        <div class="me-3">
+            <span class="custom-title">NOVO AVISO</span>
+        </div>
+        <div>
+            <i class="fas fa-pen pen-color"></i>
+            <span class="status">EM PREENCHIMENTO</span>
+        </div>
+    </div>
+    <div class="col-md-7 d-flex justify-content-center justify-content-md-end align-items-center">
+        <button class="save-button me-3">
+            <i class="fas fa-save"></i> GUARDAR ALTERAÇÕES
+        </button>
+        <button class="validate-button me-3">
+            VALIDAR
+        </button>
+        <button class="publish-button" disabled>
+            <i class="fas fa-check fa-sm"></i> PUBLICAR
+        </button>
+    </div>
+</div>
+<div class="row">
+    <div class="col-12">
+        <hr class="custom-line">
+    </div>
 </div>
 
 @code {
-    private string Menu { get; set; } = "AVISOS";
-    private string NewItem { get; set; } = "AVISO";    
 }
