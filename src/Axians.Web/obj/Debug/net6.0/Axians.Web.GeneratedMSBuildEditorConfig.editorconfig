@@ -30,6 +30,18 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV2FybmluZy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/Visual Studio/Axians.Web/src/Axians.Web/Shared/OptionHeader.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE9wdGlvbkhlYWRlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual Studio/Axians.Web/src/Axians.Web/Shared/OptionItem.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE9wdGlvbkl0ZW0ucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual Studio/Axians.Web/src/Axians.Web/Shared/TaxSelector.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFRheFNlbGVjdG9yLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Visual Studio/Axians.Web/src/Axians.Web/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 

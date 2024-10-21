@@ -1,0 +1,24 @@
+﻿@using Axians.Web.Data
+<div class="row align-items-center option" @onclick="() => OnOptionSelected.InvokeAsync(Option)">
+    <div class="col-md-12 d-flex justify-content-between">
+        <div class="d-flex align-items-center">
+            <span class="option-text">@Option.Name</span>
+        </div>
+        <div class="d-flex align-items-center">
+            @if (Option.Check)
+            {
+                <i class="fas fa-check-circle check-icon"></i>
+            }
+            else
+            {
+                <i class="far fa-circle uncheck-icon"></i>
+            }
+        </div>
+    </div>
+</div>
+
+@code {
+    [Parameter] public Option Option { get; set; } = default!;
+    [Parameter] public bool IsSelected { get; set; }
+    [Parameter] public EventCallback<Option> OnOptionSelected { get; set; }
+}
