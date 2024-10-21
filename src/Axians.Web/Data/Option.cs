@@ -5,5 +5,7 @@
         public int Id { get; set; }
         public string Name { get; set; }
         public bool Check { get; set; }
+
+        public IEnumerable<Tax> Taxs { get; set; }
     }
 }

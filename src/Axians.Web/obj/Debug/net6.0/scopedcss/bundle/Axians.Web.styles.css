@@ -1,48 +1,3 @@
-/* _content/Axians.Web/Shared/Detail.razor.rz.scp.css */
-.navigation[b-s6b3lh3eje] {
-    gap: 20px;
-}
-
-.navigation-text[b-s6b3lh3eje] {
-    font-size: 12px;
-    font-weight: bold;
-    color: #6b7280;
-}
-
-    .navigation-text.previous[b-s6b3lh3eje] {
-        margin-left: 10px;
-    }
-
-    .navigation-text.following[b-s6b3lh3eje] {
-        margin-right: 10px;
-    }
-
-.button-navigation[b-s6b3lh3eje] {
-    background-color: rgba(99, 102, 241, 0.1);
-    border: none;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-    .button-navigation:hover[b-s6b3lh3eje] {
-        background-color: rgba(99, 102, 241, 0.2);
-    }
-
-.icon-color[b-s6b3lh3eje] {
-    color: #6a0dad;
-}
-
-.block-required-field[b-s6b3lh3eje] {
-    margin-top: 15px;
-}
-
-.required-field[b-s6b3lh3eje] {
-    color: #6a0dad;
-    font-size: 0.8em;
-}
 /* _content/Axians.Web/Shared/Header.razor.rz.scp.css */
 .warning[b-k685qniu7q] {
     font-size: 12px;
@@ -253,36 +208,4 @@
         order: 0;
         margin-left: 60px;
     }
-}
-/* _content/Axians.Web/Shared/OptionList.razor.rz.scp.css */
-.list-option[b-vw311ssees] {
-    padding: 10px;
-    background-color: #f4f4f9;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.option[b-vw311ssees] {
-    padding: 10px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-    .option:hover[b-vw311ssees] {
-        background-color: #e0e0e0;
-    }
-
-.check-icon[b-vw311ssees] {
-    color: green;
-    font-size: 1.2em;
-}
-
-.uncheck-icon[b-vw311ssees] {
-    color: gray;
-    font-size: 1.2em;
-}
-
-.option-text[b-vw311ssees] {
-    font-size: 0.9em;
-    color: #333;
 }

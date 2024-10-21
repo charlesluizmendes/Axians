@@ -60,3 +60,121 @@ a, .btn-link {
     .blazor-error-boundary::after {
         content: "An error has occurred."
     }
+
+/* TODO:  */
+
+.list-option {
+    border: 50px;
+    background-color: #f4f4f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.option {
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+    .option:hover {
+        background-color: #e0e0e0;
+    }
+
+.check-icon {
+    color: green;
+    font-size: 1.2em;
+}
+
+.uncheck-icon {
+    color: gray;
+    font-size: 1.2em;
+}
+
+.option-text {
+    font-size: 0.9em;
+    color: #333;
+}
+
+/* TODO:  */
+
+.navigation {
+    gap: 20px;
+}
+
+.navigation-text {
+    font-size: 12px;
+    font-weight: bold;
+    color: #6b7280;
+}
+
+    .navigation-text.previous {
+        margin-left: 10px;
+    }
+
+    .navigation-text.following {
+        margin-right: 10px;
+    }
+
+.button-navigation {
+    background-color: rgba(99, 102, 241, 0.1);
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+    .button-navigation:hover {
+        background-color: rgba(99, 102, 241, 0.2);
+    }
+
+.icon-color {
+    color: #6a0dad;
+}
+
+.block-required-field {
+    margin-top: 15px;
+}
+
+.required-field {
+    color: #6a0dad;
+    font-size: 0.8em;
+}
+
+/* TODO:  */
+
+.select-tax {
+    padding: 20px;
+    background-color: #f4f4f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.type-text {
+    color: #999;
+}
+
+.type-label {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.select-custom {
+    width: 100%;
+    padding: 0.6rem;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    background-color: #fff;
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+    .select-custom:focus {
+        border-color: #80bdff;
+        outline: none;
+        box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+    }
+
+/* TODO:  */
+

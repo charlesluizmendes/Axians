@@ -8,49 +8,153 @@
         <Header />
     </div>
 </div>
-<br />
+
 <div class="row">
-    <div class="col-md-3">
-        <OptionList Options="OptionsList" OnOptionSelected="HandleOptionSelected"></OptionList>
+    <div class="col-md-3 g-5">
+        <div class="row list-option">
+            <div class="col-md-12">
+                @foreach (var option in Options)
+                {
+                    <div class="row align-items-center option" @onclick="() => HandleOptionSelected(option)">
+                        <div class="col-md-12 d-flex justify-content-between">
+                            <div class="d-flex align-items-center">
+                                <span class="option-text">@option.Name</span>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                @if (option.Check)
+                                {
+                                    <i class="fas fa-check-circle check-icon"></i>
+                                }
+                                else
+                                {
+                                    <i class="far fa-circle uncheck-icon"></i>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
     </div>
-    <div class="col-md-9">
+    <div class="col-md-9 g-5">
         <div class="row">
             <div class="col-md-12">
                 @if (selectedOption is not null)
                 {
-                    <Detail Options="OptionsList" CurrentIndex="@selectedOption.Id"></Detail>
-                }
-                else
-                {
-                    <p>Selecione uma opção à esquerda.</p>
+                    <div class="row align-items-center">
+                        <div class="col-12 col-md-8 text-center text-md-start">
+                            <h4>@selectedOption.Name</h4>
+                        </div>
+                        <div class="col-md-4 d-flex justify-content-between justify-content-md-end align-items-center navigation">
+                            <div class="d-flex align-items-center me-2">
+                                <button class="button-navigation" @onclick="GoToPrevious" disabled="@IsFirstOption">
+                                    <i class="fas fa-chevron-left icon-color"></i>
+                                </button>
+                                <span class="navigation-text previous ms-2">ANTERIOR</span>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <span class="navigation-text following me-2">SEGUINTE</span>
+                                <button class="button-navigation" @onclick="GoToNext" disabled="@IsLastOption">
+                                    <i class="fas fa-chevron-right icon-color"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 block-required-field">
+                            <span class="required-field">* Campos de preenchimento obrigatório</span>
+                        </div>
+                    </div>
                 }
             </div>
-        </div>    
-    </div>    
+        </div>
+        <br />
+        <div class="row">
+            <div class="col-md-12">
+                @if (selectedOption is not null)
+                {
+                    <div class="row select-tax">
+                        <div class="col-md-12">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <span class="type-text">Tipo de Taxa</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <span class="type-label">Adicionar tipo de taxa</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <select class="select-custom mt-2" @bind="selectedTaxId">
+                                        <option value="">Selecionar</option>
+                                        @foreach (var tax in selectedOption.Taxs)
+                                        {
+                                            <option value="@tax.Id">@tax.Type</option>
+                                        }
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
 </div>
 
 @code {
+
     private Option selectedOption;
+    private string selectedTaxId;
 
     private async Task HandleOptionSelected(Option option)
     {
         selectedOption = option;
+        CurrentIndex = Options.IndexOf(option);  
+        selectedTaxId = ""; 
         await Task.CompletedTask;
     }
 
-    public List<Option> OptionsList { get; set; } = new List<Option>()
+    public int CurrentIndex { get; set; } = 0;  
+
+    private bool IsFirstOption => CurrentIndex == 0;
+    private bool IsLastOption => CurrentIndex == Options.Count - 1;
+
+    private void GoToPrevious()
     {
-        new () { Id = 0, Name = "Opção 1", Check = true },
-        new () { Id = 1, Name = "Opção 2", Check = true },
-        new () { Id = 2, Name = "Opção 3", Check = true },
-        new () { Id = 3, Name = "Opção 4", Check = true },
-        new () { Id = 4, Name = "Opção 5", Check = true },
-        new () { Id = 5, Name = "Opção 6", Check = true },
-        new () { Id = 6, Name = "Opção 7", Check = true },
-        new () { Id = 7, Name = "Opção 8", Check = true },
-        new () { Id = 8, Name = "Opção 9", Check = true },
-        new () { Id = 9, Name = "Opção 10", Check = false },
-        new () { Id = 10, Name = "Opção 11", Check = false },
-        new () { Id = 11, Name = "Opção 12", Check = false },
+        if (!IsFirstOption)
+        {
+            CurrentIndex--;
+            selectedOption = Options[CurrentIndex];  
+            selectedTaxId = ""; 
+        }
+    }
+
+    private void GoToNext()
+    {
+        if (!IsLastOption)
+        {
+            CurrentIndex++;
+            selectedOption = Options[CurrentIndex];  
+            selectedTaxId = "";
+        }
+    }
+
+    public List<Option> Options { get; set; } = new List<Option>()
+    {
+        new () { Id = 0, Name = "Opção 1", Check = true, Taxs = new List<Tax> { new() { Id = 1, Type = "Variavel" }, new() { Id = 2, Type = "Fixa" } } },
+        new () { Id = 1, Name = "Opção 2", Check = true, Taxs = new List<Tax> { new() { Id = 1, Type = "Variavel" }, new() { Id = 2, Type = "Fixa" } } },
+        new () { Id = 2, Name = "Opção 3", Check = true, Taxs = new List<Tax> { new() { Id = 1, Type = "Variavel" }, new() { Id = 2, Type = "Fixa" } } },
+        new () { Id = 3, Name = "Opção 4", Check = true, Taxs = new List<Tax> { new() { Id = 1, Type = "Variavel" }, new() { Id = 2, Type = "Fixa" } } },
+        new () { Id = 4, Name = "Opção 5", Check = true, Taxs = new List<Tax> { new() { Id = 1, Type = "Variavel" }, new() { Id = 2, Type = "Fixa" } } },
+        new () { Id = 5, Name = "Opção 6", Check = true, Taxs = new List<Tax> { new() { Id = 1, Type = "Variavel" }, new() { Id = 2, Type = "Fixa" } } },
+        new () { Id = 6, Name = "Opção 7", Check = true, Taxs = new List<Tax> { new() { Id = 1, Type = "Variavel" }, new() { Id = 2, Type = "Fixa" } } },
+        new () { Id = 7, Name = "Opção 8", Check = true, Taxs = new List<Tax> { new() { Id = 1, Type = "Variavel" }, new() { Id = 2, Type = "Fixa" } } },
+        new () { Id = 8, Name = "Opção 9", Check = true, Taxs = new List<Tax> { new() { Id = 1, Type = "Variavel" }, new() { Id = 2, Type = "Fixa" } } },
+        new () { Id = 9, Name = "Opção 10", Check = false, Taxs = new List<Tax> { new() { Id = 1, Type = "Variavel" }, new() { Id = 2, Type = "Fixa" } } },
+        new () { Id = 10, Name = "Opção 11", Check = false, Taxs = new List<Tax> { new() { Id = 1, Type = "Variavel" }, new() { Id = 2, Type = "Fixa" } } },
+        new () { Id = 11, Name = "Opção 12", Check = false, Taxs = new List<Tax> { new() { Id = 1, Type = "Variavel" }, new() { Id = 2, Type = "Fixa" } } },
     };
 }
