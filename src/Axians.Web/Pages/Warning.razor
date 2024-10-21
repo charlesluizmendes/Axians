@@ -1,11 +1,12 @@
 ﻿@page "/Avisos"
 @using Axians.Web.Data
+@using Axians.Web.Shared.Warning
 
 <PageTitle>Avisos</PageTitle>
 
 <div class="row">
     <div class="col-md-12">
-        <Header />
+        <HeaderComponent />
     </div>
 </div>
 
@@ -14,7 +15,7 @@
         <div class="list-option">
             @foreach (var option in Options)
             {
-                <OptionList Option="option" IsSelected="option == selectedOption" OnOptionSelected="HandleOptionSelected" />
+                <ListComponent Option="option" IsSelected="option == selectedOption" OnOptionSelected="HandleOptionSelected" />
             }
         </div>
     </div>
@@ -24,13 +25,13 @@
             <div class="col-md-12">
                 @if (selectedOption is not null)
                 {
-                    <OptionHeader CurrentOption="selectedOption!" IsFirstOption="IsFirstOption" IsLastOption="IsLastOption" OnPrevious="GoToPrevious" OnNext="GoToNext" />
+                    <DetailComponent CurrentOption="selectedOption!" IsFirstOption="IsFirstOption" IsLastOption="IsLastOption" OnPrevious="GoToPrevious" OnNext="GoToNext" />
                     <br />
-                    <TaxSelector SelectedTaxId="@selectedTaxId" OnTaxSelected="HandleTaxSelection" />
+                    <TaxComponent SelectedTaxId="@selectedTaxId" OnTaxSelected="HandleTaxSelection" />
                     <br />
-                    <CountText OptionWithCount="@selectedOption" OnTaxSelected="HandleTaxRadioSelection" />
+                    <CountComponent OptionWithCount="@selectedOption" OnTaxSelected="HandleTaxRadioSelection" />
                     <br />
-                    <NutTable selectedTax="@selectedOption" OnTaxUpdated="HandleTaxUpdated" />
+                    <NutComponent selectedTax="@selectedOption" OnTaxUpdated="HandleTaxUpdated" />
                     <br />
                 }
             </div>

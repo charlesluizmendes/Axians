@@ -30,33 +30,33 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV2FybmluZy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Visual Studio/Axians.Web/src/Axians.Web/Shared/CountText.razor]
-build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXENvdW50VGV4dC5yYXpvcg==
+[D:/Visual Studio/Axians.Web/src/Axians.Web/Shared/Warning/CountComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFdhcm5pbmdcQ291bnRDb21wb25lbnQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Visual Studio/Axians.Web/src/Axians.Web/Shared/NutTable.razor]
-build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE51dFRhYmxlLnJhem9y
+[D:/Visual Studio/Axians.Web/src/Axians.Web/Shared/Warning/DetailComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFdhcm5pbmdcRGV0YWlsQ29tcG9uZW50LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Visual Studio/Axians.Web/src/Axians.Web/Shared/OptionHeader.razor]
-build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE9wdGlvbkhlYWRlci5yYXpvcg==
+[D:/Visual Studio/Axians.Web/src/Axians.Web/Shared/Warning/HeaderComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFdhcm5pbmdcSGVhZGVyQ29tcG9uZW50LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Visual Studio/Axians.Web/src/Axians.Web/Shared/OptionList.razor]
-build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE9wdGlvbkxpc3QucmF6b3I=
+[D:/Visual Studio/Axians.Web/src/Axians.Web/Shared/Warning/ListComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFdhcm5pbmdcTGlzdENvbXBvbmVudC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Visual Studio/Axians.Web/src/Axians.Web/Shared/TaxSelector.razor]
-build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFRheFNlbGVjdG9yLnJhem9y
+[D:/Visual Studio/Axians.Web/src/Axians.Web/Shared/Warning/NutComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFdhcm5pbmdcTnV0Q29tcG9uZW50LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual Studio/Axians.Web/src/Axians.Web/Shared/Warning/TaxComponent.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFdhcm5pbmdcVGF4Q29tcG9uZW50LnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Visual Studio/Axians.Web/src/Axians.Web/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
-
-[D:/Visual Studio/Axians.Web/src/Axians.Web/Shared/Header.razor]
-build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXEhlYWRlci5yYXpvcg==
-build_metadata.AdditionalFiles.CssScope = b-k685qniu7q
 
 [D:/Visual Studio/Axians.Web/src/Axians.Web/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
